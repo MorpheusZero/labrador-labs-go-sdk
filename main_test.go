@@ -1,4 +1,4 @@
-package main
+package lablabsgosdk
 
 import (
 	_ "github.com/joho/godotenv/autoload"
