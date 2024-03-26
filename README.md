@@ -1,2 +1,2 @@
 # labrador-labs-go-sdk
-A simple Go Client SDK for Labrador Labs API
+A simple Go Client SDK for Labrador Labs API written in Golang.
