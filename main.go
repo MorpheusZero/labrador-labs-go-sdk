@@ -43,21 +43,23 @@ type AnalyzeResultsResponse struct {
 			Binary               int `json:"binary"`
 			Sw                   int `json:"sw"`
 			Vulnerabilities      struct {
-				Total          int `json:"total"`
-				CvssV2high     int `json:"cvssV2high"`
-				CvssV2medium   int `json:"cvssV2medium"`
-				CvssV2low      int `json:"cvssV2low"`
-				CvssV2unknown  int `json:"cvssV2unknown"`
-				CvssV3critical int `json:"cvssV3critical"`
-				CvssV3high     int `json:"cvssV3high"`
-				CvssV3medium   int `json:"cvssV3medium"`
-				CvssV3low      int `json:"cvssV3low"`
-				CvssV3none     int `json:"cvssV3none"`
-				CvssV3unknown  int `json:"cvssV3unknown"`
-				LppHigh        int `json:"lppHigh"`
-				LppMedium      int `json:"lppMedium"`
-				LppLow         int `json:"lppLow"`
-				LppUndefined   int `json:"lppUndefined"`
+				Components struct {
+					Total          int `json:"total"`
+					CvssV2high     int `json:"cvssV2high"`
+					CvssV2medium   int `json:"cvssV2medium"`
+					CvssV2low      int `json:"cvssV2low"`
+					CvssV2unknown  int `json:"cvssV2unknown"`
+					CvssV3critical int `json:"cvssV3critical"`
+					CvssV3high     int `json:"cvssV3high"`
+					CvssV3medium   int `json:"cvssV3medium"`
+					CvssV3low      int `json:"cvssV3low"`
+					CvssV3none     int `json:"cvssV3none"`
+					CvssV3unknown  int `json:"cvssV3unknown"`
+					LppHigh        int `json:"lppHigh"`
+					LppMedium      int `json:"lppMedium"`
+					LppLow         int `json:"lppLow"`
+					LppUndefined   int `json:"lppUndefined"`
+				} `json:"components"`
 			} `json:"vulnerabilities"`
 			Licenses struct {
 				Total              int `json:"total"`
